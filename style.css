@@ -23,6 +23,12 @@
     border-style: solid;
 }
 
+.refresh_icon {
+    float: left;
+    width: 4vw;
+    height: auto;
+}
+
 .calculator-display {
     font-family: 'Seven Segment', sans-serif;
     font-size: 3em;
