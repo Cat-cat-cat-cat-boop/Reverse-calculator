@@ -14,9 +14,10 @@
 }
 
 .calculator {
+    margin-top: 1vh;
     width: 40vw;
-    height: 60vh;
-    background-color: #535353;
+    height: 80vh;
+    background-color: #1d1d1d;
     border-radius: 10px;
     border: 3px;
     border-style: solid;
