@@ -15,8 +15,11 @@
 
 .calculator {
     width: 40vw;
-    height: auto;
-    background-color: #242424;
+    height: 60vh;
+    background-color: #535353;
+    border-radius: 10px;
+    border: 3px;
+    border-style: solid;
 }
 
 .calculator-display {
