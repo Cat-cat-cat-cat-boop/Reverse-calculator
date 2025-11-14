@@ -35,6 +35,7 @@
     text-align: right;
     height: auto;
     width: 33vw;
+    align-self: flex-end;
 }
 
 .display-numbers {
