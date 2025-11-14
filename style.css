@@ -7,5 +7,6 @@
     border: 3px;
     border-style: outset;
     border-radius: 7px;
-    padding: 10px;
+    border-color: black;
+    padding: 7px;
 }
