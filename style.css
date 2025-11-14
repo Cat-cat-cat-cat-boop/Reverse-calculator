@@ -2,6 +2,7 @@
     color: #242424;
     font-size: 1em;
 }
+
 .title {
     background-color: cornflowerblue;
     border: 3px;
@@ -9,4 +10,15 @@
     border-radius: 7px;
     border-color: black;
     padding: 7px;
+}
+
+.calculator-display {
+    font-family: 'Seven Segment', sans-serif;
+    font-size: 3em;
+    color:aliceblue;
+    background-color:#242424;
+    border-radius: 7px;
+    border: 3px;
+    border-style: solid;
+    padding: 5px;
 }
