@@ -1,7 +1,11 @@
 .company-citation {
-    color: #403f3e;
+    color: #242424;
     font-size: 1em;
 }
 .title {
     background-color: cornflowerblue;
+    border: 3px;
+    border-style: outset;
+    border-radius: 7px;
+    padding: 10px;
 }
