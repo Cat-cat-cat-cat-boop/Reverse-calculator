@@ -18,8 +18,11 @@
     font-size: 3em;
     color:aliceblue;
     background-color:#242424;
-    border-radius: 7px;
+    border-radius: 10px;
     border: 3px;
     border-style: solid;
     padding: 5px;
+    text-align: right;
+    height: auto;
+    width: 12.5em;
 }
