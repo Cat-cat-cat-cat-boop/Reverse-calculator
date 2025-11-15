@@ -38,5 +38,7 @@ function AddNumber(Number) {
 }
 GetEquation();
 function NumberCheck() {
-    
+    if (input==eval(equation)) {
+        document.getElementById("display").innerHTML = "<p id='display' class='display-numbers' style='color: lightgreen;'>Correct</p>";
+    }
 }
