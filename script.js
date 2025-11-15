@@ -1,2 +1,35 @@
 var opperator = Math.round(Math.random()*4,1)+1
-alert(opperator)
+let display = document.getElementById("display");
+function RandomCustom(min,max) {
+    var RandomNumber = Math.floor(Math.random()*(max-min+1))+min;
+    return RandomNumber;
+}
+var number1;
+var number2;
+/* getting the random values */
+if (opperator==1) { /* addition */
+    number1= RandomCustom(1,200); number1= number1.toString();
+    number2= RandomCustom(1,200); number2= number2.toString();
+    opperator= "+";
+    display.textContent = number1+opperator+number2;
+} else if (opperator==2) { /* subtraction */
+    number1= RandomCustom(1,200); number1= number1.toString();
+    number2= RandomCustom(1,200); number2= number2.toString();
+    opperator= "-";
+    display.textContent = number1+opperator+number2;
+} else if (opperator==3) { /* multiplication */
+    number1= RandomCustom(1,100); number1= number1.toString();
+    number2= RandomCustom(1,100); number2= number2.toString();
+    opperator= "*";
+    display.textContent = number1+opperator+number2;
+} else if (opperator==4) { /* division */
+    number2= RandomCustom(1,10); number2= number2.toString();
+    number1= RandomCustom(1,50)*number2; number1= number1.toString();
+    opperator= "÷";
+    display.textContent = number1+opperator+number2;
+} else if (opperator==5) { /* exponentiation */
+    number1= RandomCustom(1,10); number1= number1.toString();
+    number2= RandomCustom(0,3); number2= number2.toString();
+    opperator= "^";
+    display.textContent = number1+opperator+number2;
+}
