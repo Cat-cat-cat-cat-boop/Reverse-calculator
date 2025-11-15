@@ -28,4 +28,5 @@ if (opperator==1) { /* addition */
     number2= RandomCustom(0,3); number2= number2.toString();
     opperator= "^";
 }
-display.textContent = number1+opperator+number2;
+var equation = number1+opperator+number2;
+displayText.textContent = equation.toString();
