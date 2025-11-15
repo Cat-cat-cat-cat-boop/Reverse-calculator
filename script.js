@@ -1,4 +1,5 @@
-var input;
+var input = "";
+var equation= "";
 function RandomCustom(min,max) {
     var RandomNumber = Math.floor(Math.random()*(max-min+1))+min;
     return RandomNumber;
