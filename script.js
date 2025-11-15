@@ -28,4 +28,5 @@ if (opperator==1) { /* addition */
     opperator= "^";
 }
 var equation = number1+opperator+number2;
-document.getElementById("display").textContent=equation;
+
+document.getElementById("display").textContent = equation;
