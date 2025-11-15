@@ -1,3 +1,4 @@
+var input;
 function RandomCustom(min,max) {
     var RandomNumber = Math.floor(Math.random()*(max-min+1))+min;
     return RandomNumber;
@@ -31,4 +32,10 @@ function GetEquation() {
     var equation = number1+opperator+number2;
 document.getElementById("display").textContent = equation;
 }
+function AddNumber(Number) {
+    input = input + Number
+}
 GetEquation();
+function NumberCheck() {
+    alert(input,equation)
+}
