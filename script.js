@@ -28,4 +28,4 @@ if (opperator==1) { /* addition */
     number2= RandomCustom(0,3); number2= number2.toString();
     opperator= "^";
 }
-displayText.textContent = number1+opperator+number2;
+display.textContent = number1+opperator+number2;
