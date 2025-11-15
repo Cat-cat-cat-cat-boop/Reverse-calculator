@@ -5,6 +5,7 @@ function RandomCustom(min,max) {
 }
 var number1;
 var number2;
+function GetEquation() {
 /* getting the random values */
 if (opperator==1) { /* addition */
     number1= RandomCustom(1,200); number1= number1.toString();
@@ -28,5 +29,6 @@ if (opperator==1) { /* addition */
     opperator= "^";
 }
 var equation = number1+opperator+number2;
-
 document.getElementById("display").textContent = equation;
+}
+GetEquation();
