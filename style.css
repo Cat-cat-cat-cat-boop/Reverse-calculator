@@ -51,5 +51,5 @@
 
 .buttons {
     width: 10vw;
-    height: auto;
+    height: max-content;
 }

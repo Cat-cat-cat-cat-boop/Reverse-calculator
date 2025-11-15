@@ -38,5 +38,5 @@ function AddNumber(Number) {
 }
 GetEquation();
 function NumberCheck() {
-    alert(input,equation)
+    
 }
