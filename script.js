@@ -40,5 +40,7 @@ GetEquation();
 function NumberCheck() {
     if (input==eval(equation)) {
         document.getElementById("display").innerHTML = "<p id='display' class='display-numbers' style='color: lightgreen;'>Correct</p>";
+    } else {
+        document.getElementById("display").innerHTML = "<p id='display' class='display-numbers' style='color: firebrick;'>Incorrect</p>"
     }
 }
