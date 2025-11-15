@@ -1,5 +1,4 @@
 var opperator = Math.round(Math.random()*4,1)+1
-let display = document.getElementById("display");
 function RandomCustom(min,max) {
     var RandomNumber = Math.floor(Math.random()*(max-min+1))+min;
     return RandomNumber;
@@ -29,4 +28,4 @@ if (opperator==1) { /* addition */
     opperator= "^";
 }
 var equation = number1+opperator+number2;
-display.textContent = `${equation}`;
+document.getElementById("display").textContent=equation;
