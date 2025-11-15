@@ -1,5 +1,8 @@
 var input = "";
 var equation= "";
+var opperator= "";
+var number1 = "";
+var number2= "";
 function RandomCustom(min,max) {
     var RandomNumber = Math.floor(Math.random()*(max-min+1))+min;
     return RandomNumber;
@@ -38,7 +41,7 @@ function AddNumber(Number) {
 }
 GetEquation();
 function NumberCheck() {
-    if (input==eval(equation)) {
+    if (input==eval(equation) ||( input==0 && opperator=="^" && number2==0 )) {
         document.getElementById("display").innerHTML = "<p id='display' class='display-numbers' style='color: lightgreen;'>Correct</p>";
     } else {
         document.getElementById("display").innerHTML = "<p id='display' class='display-numbers' style='color: firebrick;'>Incorrect</p>"
