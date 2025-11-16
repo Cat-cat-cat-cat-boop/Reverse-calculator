@@ -34,6 +34,8 @@ function GetEquation() {
         opperator= "^";
     }
     var equation = number1+opperator+number2;
+
+    console.log(equation)
 document.getElementById("display").textContent = equation;
 }
 function AddNumber(Number) {
@@ -41,6 +43,7 @@ function AddNumber(Number) {
 }
 GetEquation();
 function NumberCheck() {
+    console.log(equation)
     if (input==eval(equation)) {
         document.getElementById("display").innerHTML = "<p id='display' class='display-numbers' style='color: lightgreen;'>Correct</p>";
     } else {
