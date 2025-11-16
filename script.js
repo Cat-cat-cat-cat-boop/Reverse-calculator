@@ -36,6 +36,7 @@ function GetEquation() {
     var equation = number1+opperator+number2;
 
     console.log(equation)
+    console.log(eval(equation))
 document.getElementById("display").textContent = equation;
 }
 function AddNumber(Number) {
