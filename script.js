@@ -49,6 +49,8 @@ function NumberCheck() {
     console.log(equation)
     if (input==eval(equation)) {
         document.getElementById("display").innerHTML = "<p id='display' class='display-numbers' style='color: lightgreen;'>Correct</p>";
+    } else if (document.getElementById("display").textContent == "Correct") {
+        GetEquation()
     } else {
         document.getElementById("display").innerHTML = "<p id='display' class='display-numbers' style='color: firebrick;'>Incorrect</p>"
     }
