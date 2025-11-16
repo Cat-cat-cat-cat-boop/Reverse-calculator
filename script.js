@@ -28,7 +28,7 @@ function GetEquation() {
     } else if (opperator==4) { /* division */
         number2= RandomCustom(1,10); number2= number2.toString();
         number1= RandomCustom(1,50)*number2; number1= number1.toString();
-        opperator= "÷";
+        opperator= "/";
     } else if (opperator==5) { /* exponentiation */
         number1= RandomCustom(1,10); number1= number1.toString();
         number2= RandomCustom(1,3); number2= number2.toString();
