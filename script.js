@@ -30,7 +30,7 @@ function GetEquation() {
         opperator= "÷";
     } else if (opperator==5) { /* exponentiation */
         number1= RandomCustom(1,10); number1= number1.toString();
-        number2= RandomCustom(0,3); number2= number2.toString();
+        number2= RandomCustom(1,3); number2= number2.toString();
         opperator= "^";
     }
     var equation = number1+opperator+number2;
@@ -41,7 +41,7 @@ function AddNumber(Number) {
 }
 GetEquation();
 function NumberCheck() {
-    if (input==eval(equation) ||( input==0 && opperator=="^" && number2==0 )) {
+    if (input==eval(equation)) {
         document.getElementById("display").innerHTML = "<p id='display' class='display-numbers' style='color: lightgreen;'>Correct</p>";
     } else {
         document.getElementById("display").innerHTML = "<p id='display' class='display-numbers' style='color: firebrick;'>Incorrect</p>"
