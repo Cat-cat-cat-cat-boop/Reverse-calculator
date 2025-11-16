@@ -33,7 +33,7 @@ function GetEquation() {
         number2= RandomCustom(1,3); number2= number2.toString();
         opperator= "^";
     }
-    var equation = number1+opperator+number2;
+    equation = number1+opperator+number2;
 
     console.log(equation)
     console.log(eval(equation))
