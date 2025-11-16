@@ -11,6 +11,7 @@ function GetEquation() {
     var number1;
     var number2;
     var opperator = Math.round(Math.random()*4,1)+1
+    document.getElementById("top-display").textContent = "";
     /* getting the random values */
     if (opperator==1) { /* addition */
         number1= RandomCustom(1,200); number1= number1.toString();
@@ -39,7 +40,9 @@ function GetEquation() {
 document.getElementById("display").textContent = equation;
 }
 function AddNumber(Number) {
+    document.getElementById("top-display").textContent = equation;
     input = input + Number
+    document.getElementById("display").textContent = input;
 }
 GetEquation();
 function NumberCheck() {

@@ -12,6 +12,7 @@
     <div class="calculator">
         <input type="image" src="refresh_icon.svg" alt="Refresh" class="refresh_icon" onclick="GetEquation();">
         <div class="calculator-display">
+            <p id="top-display" class="top-display">1+1</p>
             <p id="display" class="display-numbers">0123456789</p>
         </div>
         <div class="button-container">
@@ -28,7 +29,7 @@
             <button onclick="AddNumber('3')" class="buttons">3</button>
 
             <button onclick="AddNumber('0')" class="buttons">0</button>
-            <button onclick="AddNumber('.')" class="buttons">.</button>
+            <button class="buttons" style="color: #242424; font-weight:600;">.</button>
             <button onclick="NumberCheck(); input=''" class="buttons">Enter</button>
         </div>
     </div>
