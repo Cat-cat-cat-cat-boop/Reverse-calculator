@@ -1,3 +1,4 @@
+
 <head>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.cdnfonts.com/css/seven-segment" rel="stylesheet">
@@ -7,15 +8,22 @@
 <body>
     <div class="title">
         <h1>Reverse calculator</h1>
-        <p class="Company-citation">Made by Polaris (and one other random person)</p>
+        <p class="Company-citation">Made by Polaris (and outsourced to a random person for an undisclosed monetary amount)</p>
     </div>
     <div class="calculator">
-        <input type="image" src="refresh_icon.svg" alt="Refresh" class="refresh_icon" onclick="GetEquation();">
-        <div class="calculator-display">
-            <p id="top-display" class="top-display">1+1</p>
-            <p id="display" class="display-numbers">0123456789</p>
+        <div class="timer-bar" id="timer-bar"></div>
+        <div class="game-stats">
+            <span id="timeouts-display">Timeouts: 0/3</span>
+            <input type="image" src="refresh_icon.svg" alt="Refresh" class="refresh_icon" onclick="RestartGame();">
         </div>
-        <div class="button-container">
+        <div class="calculator-display">
+            <p id="top-display" class="top-display">Ready?</p>
+            <p id="display" class="display-numbers">Let's go!</p>
+        </div>
+        <div class="start-screen" id="start-screen">
+            <button onclick="StartGame()" class="start-button">START GAME</button>
+        </div>
+        <div class="button-container" id="button-container">
             <button onclick="AddNumber('7')" class="buttons">7</button>
             <button onclick="AddNumber('8')" class="buttons">8</button>
             <button onclick="AddNumber('9')" class="buttons">9</button>
@@ -33,7 +41,7 @@
 
             <button onclick="AddNumber('0')" class="buttons wide">0</button>
             <button onclick="AddNumber('.')" class="buttons">.</button>
-            <button onclick="NumberCheck(); input=''" class="buttons">Enter</button>
+            <button onclick="NumberCheck(); input=''" class="buttons enter">Enter</button>
         </div>
     </div>
 </body>
