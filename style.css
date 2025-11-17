@@ -49,31 +49,11 @@
     }
 }
 
-.timer-bar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 5px;
-    width: 100%;
-    background-color: #2fc76a;
-    transition: width 50ms linear, background-color 200ms ease;
-    border-radius: 14px 14px 0 0;
-    z-index: 10;
-}
-
 .game-stats {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
-    color: #bfffb7;
-    font-family: 'Seven Segment', sans-serif;
-    font-size: 0.9rem;
     padding: 4px 0;
-}
-
-#timeouts-display {
-    color: #ff4444;
-    font-weight: bold;
 }
 
 .refresh_icon {
