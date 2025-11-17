@@ -8,15 +8,12 @@
 
 .company-citation {
     color: #242424;
-    font-size: 1em;
 }
 
 .title {
     background-color: cornflowerblue;
-    border: 3px;
-    border-style: outset;
+    border: 3px outset black;
     border-radius: 7px;
-    border-color: black;
     padding: 7px;
 }
 
@@ -52,7 +49,6 @@
 .game-stats {
     display: flex;
     justify-content: flex-end;
-    align-items: center;
     padding: 4px 0;
 }
 
@@ -93,34 +89,42 @@
 
 .display-numbers {
     font-size: 2.25rem;
-    line-height: 1;
     margin: 0;
     padding-right: 0.1rem;
     letter-spacing: 2px;
-    transition: color 0.3s ease, opacity 0.15s ease;
+    transition: color 0.3s, opacity 0.15s;
 }
 
-.buttons {
-    background: linear-gradient(180deg, #4f4f4f 0%, #333333 100%);
+.buttons,
+.start-button {
+    background: linear-gradient(180deg, #4f4f4f, #333);
     color: whitesmoke;
     border: 1px solid rgba(255, 255, 255, 0.03);
     border-radius: 10px;
     font-size: 1.25rem;
-    min-height: 56px;
     padding: 0 14px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     box-shadow: 0 6px 0 rgba(0, 0, 0, 0.5);
-    transition: transform 80ms ease, box-shadow 80ms ease, filter 120ms ease;
+    transition: transform 80ms, box-shadow 80ms, filter 120ms;
     cursor: pointer;
     -webkit-user-select: none;
     user-select: none;
-    -webkit-appearance: none;
     appearance: none;
 }
 
-.buttons:hover:not(.disabled) {
+.buttons {
+    min-height: 56px;
+}
+
+.start-button {
+    font-family: 'Seven Segment', sans-serif;
+    font-size: 1.5rem;
+    padding: 20px 40px;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+
+.buttons:hover:not(.disabled),
+.start-button:hover {
     filter: brightness(1.06);
 }
 
@@ -133,7 +137,7 @@
 
 .buttons.disabled {
     color: #a5a5a5;
-    background-color: #111111;
+    background-color: #111;
     opacity: 0.5;
     cursor: not-allowed;
     box-shadow: none;
@@ -143,7 +147,8 @@
     grid-column: span 2;
 }
 
-.buttons:active:not(.disabled) {
+.buttons:active:not(.disabled),
+.start-button:active {
     transform: translateY(4px);
     box-shadow: 0 2px 0 rgba(0, 0, 0, 0.6);
 }
@@ -162,16 +167,15 @@
 }
 
 .buttons.enter:active {
-    transform: translateY(4px);
     box-shadow: 0 2px 0 rgba(0, 0, 0, 0.3);
 }
 
 .top-display {
-    color: #666666;
+    color: #666;
     font-size: 0.6em;
     margin: 0;
     padding-right: 0.1rem;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.3s;
     min-height: 1.2em;
 }
 
@@ -180,34 +184,6 @@
     justify-content: center;
     align-items: center;
     min-height: 200px;
-}
-
-.start-button {
-    background: linear-gradient(180deg, #4f4f4f 0%, #333333 100%);
-    color: whitesmoke;
-    font-family: 'Seven Segment', sans-serif;
-    font-weight: 400;
-    font-size: 1.5rem;
-    padding: 20px 40px;
-    border: 1px solid rgba(255, 255, 255, 0.03);
-    border-radius: 10px;
-    box-shadow: 0 6px 0 rgba(0, 0, 0, 0.5);
-    cursor: pointer;
-    transition: transform 80ms ease, box-shadow 80ms ease, filter 120ms ease;
-    -webkit-user-select: none;
-    user-select: none;
-    -webkit-appearance: none;
-    appearance: none;
-    letter-spacing: 2px;
-}
-
-.start-button:hover {
-    filter: brightness(1.06);
-}
-
-.start-button:active {
-    transform: translateY(4px);
-    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.6);
 }
 
 @keyframes shake {
