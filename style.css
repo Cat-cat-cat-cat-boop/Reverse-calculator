@@ -187,6 +187,7 @@
 }
 
 @keyframes shake {
+    /* 67 warning */
 
     0%,
     100% {
@@ -196,14 +197,14 @@
     10%,
     30%,
     50%,
-    70%,
+    67%,
     90% {
         transform: translateX(-5px);
     }
 
     20%,
     40%,
-    60%,
+    67%,
     80% {
         transform: translateX(5px);
     }
