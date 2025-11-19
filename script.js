@@ -69,14 +69,8 @@ function GetEquation(min, max, opperator) {
         opperator = "**";
     }
 
-    /* add parens around negatives */
-    if (number1.startsWith("-")) {
-        number1 = "(" + number1 + ")";
-    }
-    if (number2.startsWith("-")) {
-        number2 = "(" + number2 + ")";
-    }
-
+    if (Math.sign(number1) == -1) { number1 = " ( " + number1 + " ) " }
+    if (Math.sign(number2) == -1) { number2 = " ( " + number2 + " ) " }
     equation = number1 + opperator + number2;
 }
 
