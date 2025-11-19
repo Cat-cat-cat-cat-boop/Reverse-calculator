@@ -54,6 +54,8 @@ function GetEquation(min,max,opperator) {
     } else if (opperator == 2) { /* subtraction */
         number1 = RandomCustom(min, max); number1 = number1.toString();
         number2 = RandomCustom(min, max); number2 = number2.toString();
+        if (Math.sign(number1)==-1) {number1=" ( "+number1+" ) "}
+        if (Math.sign(number2)==-1) {number2=" ( "+number2+" ) "}
         opperator = "-";
     } else if (opperator == 3) { /* multiplication */
         number1 = RandomCustom(min, max); number1 = number1.toString();
