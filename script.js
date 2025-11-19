@@ -123,11 +123,11 @@ function MakeComplexEquation(level) {
         else if (opperator == 4) { GetEquation(-50, 50, opperator) }
         else { GetEquation(0, 5, opperator) }
 
-        equation = equation + opperators[Math.round(Math.random() * 4, 1)] + ")"
+        equation = equation + opperators[Math.floor(Math.random() * 4)] + ")"
         complexEquation = complexEquation + equation /* Closing the () */
 
         if (Math.round(Math.random()) == 1) { /* Adding optional ending portion */
-            opperator = Math.round(Math.random() * 4, 1) + 1
+            opperator = Math.floor(Math.random() * 4) + 1
             if (opperator == 1 || opperator == 2) { GetEquation(-500, 500, opperator) }
             else if (opperator == 3) { GetEquation(-100, 100, opperator) }
             else if (opperator == 4) { GetEquation(-50, 50, opperator) }
