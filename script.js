@@ -85,7 +85,7 @@ function AddNumber(Number) {
     if (!gameStarted) return;
 
     if (input === "") {
-        document.getElementById("top-display").textContent = equation;
+    document.getElementById("top-display").textContent = equation;
     }
 
     input = input + Number;
