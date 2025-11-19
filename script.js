@@ -77,54 +77,54 @@ function MakeComplexEquation(level) {
     var opperators = ["+","-","*","/","**"]
     if (level == 1) {
         opperator = Math.round(Math.random(), 1) + 1
-        GetEquation(1,20)
+        GetEquation(1,20,opperator)
         complexEquation = equation
     }
     if (level == 2) {
         opperator = Math.round(Math.random()*3, 1) + 1
-        if (opperator==1 || opperator==2) {GetEquation(1,100)}
-        else {GetEquation(1,10)}
+        if (opperator==1 || opperator==2) {GetEquation(1,100,opperator)}
+        else {GetEquation(1,10,opperator)}
         complexEquation = equation
     }
     if (level == 3) {
         opperator = Math.round(Math.random()*3, 1) + 1
-        if (opperator == 1 || opperator == 2) {GetEquation(-200,200)}
-        else {GetEquation(-20,20)}
+        if (opperator == 1 || opperator == 2) {GetEquation(-200,200,opperator)}
+        else {GetEquation(-20,20,opperator)}
         complexEquation = equation
     }
     if (level == 4) {
         opperator = Math.round(Math.random()*4, 1) +1
-        if (opperator==1 || opperator==2) {GetEquation(-500,500)}
-        else if (opperator==3) {GetEquation(-100,100)}
-        else if (opperator==4) {GetEquation(-50,50)}
-        else {GetEquation(0,5)}
+        if (opperator==1 || opperator==2) {GetEquation(-500,500,opperator)}
+        else if (opperator==3) {GetEquation(-100,100,opperator)}
+        else if (opperator==4) {GetEquation(-50,50,opperator)}
+        else {GetEquation(0,5,opperator)}
         complexEquation = equation
     }
     if (level == 5) {
         opperator = Math.round(Math.random()*4, 1) +1 /* Getting the first part */
-        if (opperator==1 || opperator==2) {GetEquation(-500,500)}
-        else if (opperator==3) {GetEquation(-100,100)}
-        else if (opperator==4) {GetEquation(-50,50)}
-        else {GetEquation(0,5)}
+        if (opperator==1 || opperator==2) {GetEquation(-500,500,opperator)}
+        else if (opperator==3) {GetEquation(-100,100,opperator)}
+        else if (opperator==4) {GetEquation(-50,50,opperator)}
+        else {GetEquation(0,5,opperator)}
 
         equation = equation + opperators[Math.round(Math.random()*4, 1)] + "("
         complexEquation = equation /* Adding the () */
 
         opperator = Math.round(Math.random()*4, 1) +1 /* The part inside the () */
-        if (opperator==1 || opperator==2) {GetEquation(-500,500)}
-        else if (opperator==3) {GetEquation(-100,100)}
-        else if (opperator==4) {GetEquation(-50,50)}
-        else {GetEquation(0,5)}
+        if (opperator==1 || opperator==2) {GetEquation(-500,500,opperator)}
+        else if (opperator==3) {GetEquation(-100,100,opperator)}
+        else if (opperator==4) {GetEquation(-50,50,opperator)}
+        else {GetEquation(0,5,opperator)}
 
         equation = equation + opperators[Math.round(Math.random()*4, 1)] + ")"
         complexEquation = complexEquation + equation /* Closing the () */
 
         if (Math.round(Math.random())==1) { /* Adding optional ending portion */
             opperator = Math.round(Math.random()*4, 1) +1
-            if (opperator==1 || opperator==2) {GetEquation(-500,500)}
-            else if (opperator==3) {GetEquation(-100,100)}
-            else if (opperator==4) {GetEquation(-50,50)}
-            else {GetEquation(0,5)}
+            if (opperator==1 || opperator==2) {GetEquation(-500,500,opperator)}
+            else if (opperator==3) {GetEquation(-100,100,opperator)}
+            else if (opperator==4) {GetEquation(-50,50,opperator)}
+            else {GetEquation(0,5,opperator)}
             complexEquation = complexEquation + equation
         }
     }
