@@ -117,7 +117,7 @@ function MakeComplexEquation(level) {
         else if (opperator==4) {GetEquation(-50,50,opperator)}
         else {GetEquation(0,5,opperator)}
 
-        equation = equation + " ) " + opperators[Math.round(Math.random()*3, 1)]
+        equation = equation + " ) "
         complexEquation = complexEquation + equation /* Closing the () */
 
         if (Math.round(Math.random())==1) { /* Adding optional ending portion */
@@ -126,7 +126,7 @@ function MakeComplexEquation(level) {
             else if (opperator==3) {GetEquation(-100,100,opperator)}
             else if (opperator==4) {GetEquation(-50,50,opperator)}
             else {GetEquation(0,5,opperator)}
-            complexEquation = complexEquation + equation
+            complexEquation = complexEquation + opperators[Math.round(Math.random()*3, 1)] + equation
         }
     }
     console.log(complexEquation);
